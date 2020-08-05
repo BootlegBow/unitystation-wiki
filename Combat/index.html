@@ -1,0 +1,1872 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Unitystation Wiki">
+      
+      
+        <link rel="canonical" href="https://unitystation-wiki.github.io/unitystation/Combat/">
+      
+      
+        <meta name="author" content="Waffielz">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.0">
+    
+    
+      
+        <title>Combat - UnityStation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.89dc9fe3.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#combat" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://unitystation-wiki.github.io/unitystation/" title="UnityStation" class="md-header-nav__button md-logo" aria-label="UnityStation">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            UnityStation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Combat
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/unitystation/unitystation-wiki/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    unitystation/unitystation-wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://unitystation-wiki.github.io/unitystation/" title="UnityStation" class="md-nav__button md-logo" aria-label="UnityStation">
+      
+  <img src="../assets/images/logo.png" alt="logo">
+
+    </a>
+    UnityStation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/unitystation/unitystation-wiki/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    unitystation/unitystation-wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="UnityStation" class="md-nav__link">
+      UnityStation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Access/" title="Access" class="md-nav__link">
+      Access
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../All-Access/" title="All Access" class="md-nav__link">
+      All Access
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Antagonist/" title="Antagonist" class="md-nav__link">
+      Antagonist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Asteroid/" title="Asteroid" class="md-nav__link">
+      Asteroid
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Atmospherics-Technician/" title="Atmospherics Technician" class="md-nav__link">
+      Atmospherics Technician
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Bartending/" title="Bartending" class="md-nav__link">
+      Bartending
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Battle-royale/" title="Battle royale" class="md-nav__link">
+      Battle royale
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Chemistry/" title="Chemistry" class="md-nav__link">
+      Chemistry
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Clothing-Stats/" title="Clothing Stats" class="md-nav__link">
+      Clothing Stats
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Combat
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Combat" class="md-nav__link md-nav__link--active">
+      Combat
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-actual-introduction" class="md-nav__link">
+    The Actual Introduction=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movement" class="md-nav__link">
+    Movement=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-defensively" class="md-nav__link">
+    Moving Defensively==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-offensively" class="md-nav__link">
+    Moving Offensively==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-a-plan" class="md-nav__link">
+    Making a Plan==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guns-sticks-vests" class="md-nav__link">
+    Guns, Sticks, Vests==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hrrngg-narcotics" class="md-nav__link">
+    Hrrngg, Narcotics...==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-environment" class="md-nav__link">
+    Changing the environment==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staying-alive" class="md-nav__link">
+    Staying Alive=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#being-a-coward" class="md-nav__link">
+    Being a coward==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actual-methods" class="md-nav__link">
+    Actual methods==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ribs-grow-back" class="md-nav__link">
+    Ribs grow back==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#killing-the-other-guy" class="md-nav__link">
+    Killing the other guy=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guns" class="md-nav__link">
+    Guns==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#melee" class="md-nav__link">
+    Melee==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    Groups=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fighting-as-a-tight-group" class="md-nav__link">
+    Fighting as a tight group==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fighting-as-a-spread-out-group" class="md-nav__link">
+    Fighting as a spread out group==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fighting-groups" class="md-nav__link">
+    Fighting groups==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aftermath" class="md-nav__link">
+    Aftermath=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taking-responsibility" class="md-nav__link">
+    Taking responsibility==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-null-outcome" class="md-nav__link">
+    The null outcome==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finish-him" class="md-nav__link">
+    FINISH HIM==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-better" class="md-nav__link">
+    Getting Better
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Construction/" title="Construction" class="md-nav__link">
+      Construction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Cook/" title="Cook" class="md-nav__link">
+      Cook
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Cooking/" title="Cooking" class="md-nav__link">
+      Cooking
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Doobly/" title="Doobly" class="md-nav__link">
+      Doobly
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Drinks-Guide/" title="Drinks Guide" class="md-nav__link">
+      Drinks Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Gateway-Maps/" title="Gateway Maps" class="md-nav__link">
+      Gateway Maps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Groups/" title="Groups" class="md-nav__link">
+      Groups
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Guide-to-Food-and-Drink/" title="Guide to Food and Drink" class="md-nav__link">
+      Guide to Food and Drink
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Guide-to-food-and-drinks/" title="Guide to food and drinks" class="md-nav__link">
+      Guide to food and drinks
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Guide-to-the-nuclear-reactor/" title="Guide to the nuclear reactor" class="md-nav__link">
+      Guide to the nuclear reactor
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Guides/" title="Guides" class="md-nav__link">
+      Guides
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Hacking-Guide/" title="Hacking Guide" class="md-nav__link">
+      Hacking Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../How-not-to-die-instantly/" title="How not to die instantly" class="md-nav__link">
+      How not to die instantly
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Ian/" title="Ian" class="md-nav__link">
+      Ian
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Intents/" title="Intents" class="md-nav__link">
+      Intents
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Nuclear-Authentication-Disk/" title="Nuclear Authentication Disk" class="md-nav__link">
+      Nuclear Authentication Disk
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Nuke-Ops/" title="Nuke Ops" class="md-nav__link">
+      Nuke Ops
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Official-Maps/" title="Official Maps" class="md-nav__link">
+      Official Maps
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../PKA/" title="PKA" class="md-nav__link">
+      PKA
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../RP-words-and-abbreviations/" title="RP words and abbreviations" class="md-nav__link">
+      RP words and abbreviations
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Research-Director/" title="Research Director" class="md-nav__link">
+      Research Director
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Robotics-Guide/" title="Robotics Guide" class="md-nav__link">
+      Robotics Guide
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Roles/" title="Roles" class="md-nav__link">
+      Roles
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Security/" title="Security" class="md-nav__link">
+      Security
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Shitsec/" title="Shitsec" class="md-nav__link">
+      Shitsec
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../So-close-to-impossible-that-it-might-as-well-not-even-exist/" title="So close to impossible that it might as well not even exist" class="md-nav__link">
+      So close to impossible that it might as well not even exist
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Space-Law/" title="Space Law" class="md-nav__link">
+      Space Law
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../The-Lore/" title="The Lore" class="md-nav__link">
+      The Lore
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Tunguska/" title="Tunguska" class="md-nav__link">
+      Tunguska
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Weapon-Stats/" title="Weapon Stats" class="md-nav__link">
+      Weapon Stats
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Xenomorph/" title="Xenomorph" class="md-nav__link">
+      Xenomorph
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contributors/" title="User:A heckin canadian" class="md-nav__link">
+      User:A heckin canadian
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-44" type="checkbox" id="nav-44">
+    
+    <label class="md-nav__link" for="nav-44">
+      Antags
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Antags" data-md-level="1">
+      <label class="md-nav__title" for="nav-44">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Antags
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../antags/Cargonia/" title="Cargonia" class="md-nav__link">
+      Cargonia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../antags/Nuclear-Emergency/" title="Nuclear Emergency" class="md-nav__link">
+      Nuclear Emergency
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../antags/Traitor/" title="Traitor" class="md-nav__link">
+      Traitor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-45" type="checkbox" id="nav-45">
+    
+    <label class="md-nav__link" for="nav-45">
+      Gateway
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Gateway" data-md-level="1">
+      <label class="md-nav__title" for="nav-45">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Gateway
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gateway/Ancient-Temple/" title="Ancient Temple" class="md-nav__link">
+      Ancient Temple
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gateway/Caverna/" title="Caverna" class="md-nav__link">
+      Caverna
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gateway/Palace/" title="Palace" class="md-nav__link">
+      Palace
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gateway/Relicta/" title="Relicta" class="md-nav__link">
+      Relicta
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-46" type="checkbox" id="nav-46">
+    
+    <label class="md-nav__link" for="nav-46">
+      Maps
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Maps" data-md-level="1">
+      <label class="md-nav__title" for="nav-46">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Maps
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../maps/Outpost/" title="Outpost" class="md-nav__link">
+      Outpost
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../maps/PogStation/" title="PogStation" class="md-nav__link">
+      PogStation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-47" type="checkbox" id="nav-47">
+    
+    <label class="md-nav__link" for="nav-47">
+      Roles
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Roles" data-md-level="1">
+      <label class="md-nav__title" for="nav-47">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Roles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Assistant/" title="Assistant" class="md-nav__link">
+      Assistant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Bartender/" title="Bartender" class="md-nav__link">
+      Bartender
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Botanist/" title="Botanist" class="md-nav__link">
+      Botanist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Captain/" title="Captain" class="md-nav__link">
+      Captain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Cargo-Technician/" title="Cargo Technician" class="md-nav__link">
+      Cargo Technician
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Central-Command-Officer/" title="Central Command Officer" class="md-nav__link">
+      Central Command Officer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Chaplain/" title="Chaplain" class="md-nav__link">
+      Chaplain
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Chef/" title="Chef" class="md-nav__link">
+      Chef
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Chemist/" title="Chemist" class="md-nav__link">
+      Chemist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Chief-Engineer/" title="Chief Engineer" class="md-nav__link">
+      Chief Engineer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Chief-Medical-Officer/" title="Chief Medical Officer" class="md-nav__link">
+      Chief Medical Officer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Clown/" title="Clown" class="md-nav__link">
+      Clown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Curator/" title="Curator" class="md-nav__link">
+      Curator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Death-Squad/" title="Death Squad" class="md-nav__link">
+      Death Squad
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Detective/" title="Detective" class="md-nav__link">
+      Detective
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Emergency-Response-Team/" title="Emergency Response Team" class="md-nav__link">
+      Emergency Response Team
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Engineer/" title="Engineer" class="md-nav__link">
+      Engineer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Geneticist/" title="Geneticist" class="md-nav__link">
+      Geneticist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Head-of-Security/" title="Head of Security" class="md-nav__link">
+      Head of Security
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/HoP/" title="HoP" class="md-nav__link">
+      HoP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/HoS/" title="HoS" class="md-nav__link">
+      HoS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Janitor/" title="Janitor" class="md-nav__link">
+      Janitor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Lawyer/" title="Lawyer" class="md-nav__link">
+      Lawyer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Medical-Doctor/" title="Medical Doctor" class="md-nav__link">
+      Medical Doctor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Mime/" title="Mime" class="md-nav__link">
+      Mime
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Quartermaster/" title="Quartermaster" class="md-nav__link">
+      Quartermaster
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Roboticist/" title="Roboticist" class="md-nav__link">
+      Roboticist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Scientist/" title="Scientist" class="md-nav__link">
+      Scientist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Security-Officer/" title="Security Officer" class="md-nav__link">
+      Security Officer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Shaft-Miner/" title="Shaft Miner" class="md-nav__link">
+      Shaft Miner
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Virologist/" title="Virologist" class="md-nav__link">
+      Virologist
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../roles/Warden/" title="Warden" class="md-nav__link">
+      Warden
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-actual-introduction" class="md-nav__link">
+    The Actual Introduction=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#movement" class="md-nav__link">
+    Movement=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-defensively" class="md-nav__link">
+    Moving Defensively==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-offensively" class="md-nav__link">
+    Moving Offensively==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparation" class="md-nav__link">
+    Preparation=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#making-a-plan" class="md-nav__link">
+    Making a Plan==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guns-sticks-vests" class="md-nav__link">
+    Guns, Sticks, Vests==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hrrngg-narcotics" class="md-nav__link">
+    Hrrngg, Narcotics...==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-environment" class="md-nav__link">
+    Changing the environment==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staying-alive" class="md-nav__link">
+    Staying Alive=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#being-a-coward" class="md-nav__link">
+    Being a coward==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actual-methods" class="md-nav__link">
+    Actual methods==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ribs-grow-back" class="md-nav__link">
+    Ribs grow back==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#killing-the-other-guy" class="md-nav__link">
+    Killing the other guy=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guns" class="md-nav__link">
+    Guns==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#melee" class="md-nav__link">
+    Melee==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#groups" class="md-nav__link">
+    Groups=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fighting-as-a-tight-group" class="md-nav__link">
+    Fighting as a tight group==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fighting-as-a-spread-out-group" class="md-nav__link">
+    Fighting as a spread out group==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fighting-groups" class="md-nav__link">
+    Fighting groups==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aftermath" class="md-nav__link">
+    Aftermath=
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taking-responsibility" class="md-nav__link">
+    Taking responsibility==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-null-outcome" class="md-nav__link">
+    The null outcome==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finish-him" class="md-nav__link">
+    FINISH HIM==
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-better" class="md-nav__link">
+    Getting Better
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/unitystation/unitystation-wiki/edit/master/docs/Combat.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="combat">Combat<a class="headerlink" href="#combat" title="Permanent link">&para;</a></h1>
+<p>Got beat up by [shitsec](shitsec)? Want to beat up [shitsec](shitsec)? Cant assassinate your target no matter what? want to learn to play sec better?</p>
+<p>Well first you'll need to learn to be robust! This may take a while.</p>
+<h2 id="the-actual-introduction">The Actual Introduction=<a class="headerlink" href="#the-actual-introduction" title="Permanent link">&para;</a></h2>
+<p>One thing you need to know about combat in ss13, is that it is often not the best option. In many scenarios you may be better off explaining your actions or surrendering peacefully. If you arent an [antagonist](antagonist), getting into way more fights than needed can place you in the crosshairs of an [admin](admin), with consequences that can last between rounds.</p>
+<p>If you are entirely new to the game, combat is not the first thing you should learn, rather, you should prioritize learning [very basic skills](How not to die instantly) and the non-combat parts of roles.</p>
+<p>Without further adieu, Combat in ss13 is one of its most complex and varied systems, with the majority of other systems playing into it in at-least some way. This means that depending on your job and equipment, and that of your opponent, every fight can involve different and varied tactics. This guide will cover movement, preparation, keeping yourself alive, killing the other guy, utilizing and fighting groups and dealing with fallout that may result from combat.</p>
+<h2 id="movement">Movement=<a class="headerlink" href="#movement" title="Permanent link">&para;</a></h2>
+<p>Movement is a very important part of combat, and good movement will allow you to stay alive and kill your opponents much easier. The key to movement in combat is to minimize the amount of moments your in their line of fire, while maximizing the amount you can use your own weapons. If you are good enough, and master movement, you can even dodge bullets. </p>
+<h2 id="moving-defensively">Moving Defensively==<a class="headerlink" href="#moving-defensively" title="Permanent link">&para;</a></h2>
+<p>If you wish to not end up a corpse, the best way to stay alive is to not be there to get shot. If someone has put in the preparation to kill you and your caught with your pants down, your best option is to run like hell and scream bloody murder, unless, of course, everyone else wants you dead too, in which case your best off not drawing extra attention. If your not wanted by [security](Security Officer), your best option is to run into a high traffic or patrolled area like the main hall or security, and let others deal with the problem for you. If you are, however, you should do the exact opposite. Running into the maintenance shafts and turning off all your lights is preferable. If your opponent is chasing you, but out of sight, open doors while running so as to trick them into going down the wrong hall or into dead ends. if you know the map or come across them, corners and intersections are your best choice to lose your opponent. Corners block line of sight, and lines of fire, while intersections force them to choose between routes. If you know they don't have access to an area, you can run into it and lock the door behind you. Similarly, if you see a locker on your route, you can hide inside it so the person chasing you loses track. If you can stomach it, or have a space suit, the void of space is a very easy way to lose your opponent. All these will give you time to prepare a fight where you have the advantage. </p>
+<h2 id="moving-offensively">Moving Offensively==<a class="headerlink" href="#moving-offensively" title="Permanent link">&para;</a></h2>
+<p>There is more to chasing someone than running in a straight line. if you see the person your chasing, try to predict which door they will take when running, and lean towards that side of the hall to gain a slight advantage, a lot like running in the inner part of a track. You can use corners to stage ambushes, which can tie up a fight nicely if you've tricked your opponent into thinking your just going to run away. Similarly, you can use lockers to the same effect. just shove your weapon into your hand and bash their head in while they try and find you. If you have a gun, firing it behind you while being chased will give the person chasing you less time to react to the bullets. If however, you are the one chasing, try using faster RoF weapons, to simply out-spray their ability to dodge rounds. If you have a friend, you can have them block the path of a person your chasing or stand still while you run them into a loop. This is always more effective than simply having two people trying to chase someone down.</p>
+<h2 id="preparation">Preparation=<a class="headerlink" href="#preparation" title="Permanent link">&para;</a></h2>
+<p>If you want to make a fight easy, and have the time, simply prepare beforehand. A fight in which you are prepared will always end up going better than one you just wing. Your preparation can vary wildly depending on your job, the state of the station, and a very long list of other factors, so this section will cover planning and some of the most accessible ways to prepare.</p>
+<h2 id="making-a-plan">Making a Plan==<a class="headerlink" href="#making-a-plan" title="Permanent link">&para;</a></h2>
+<p>If you wish to fight, its always best to think up a plan beforehand. Try figuring out how to synergize your equipment, stuns, and possible strategies. First, you should know who it is you are trying to fight. If they have a more important objective, they could simply ignore your attempts to get them killed and walk off. [Nuke ops](Nuclear Emergency), for example, may abandon a fight with you to instead fight the person holding the disk, so it could be easier to lure them into an ambush that way to exploit it. A [captain](captain), on the other hand, is mostly concerned with staying alive and will have someone else do their killing for them. If you know who you are fighting, and know how to use your own gear to its maximum effect, while considering their possible responses, fights you get into should be a breeze.</p>
+<h2 id="guns-sticks-vests">Guns, Sticks, Vests==<a class="headerlink" href="#guns-sticks-vests" title="Permanent link">&para;</a></h2>
+<p>One way to make combat easier is to simply have the bigger gun. If you set aside time to gather armor and weapons, you may be able to simply outgun your opponents or soak up more rounds. To get these, you can ask around or steal them, though the latter may just result in you getting lit up. If you ask for a weapon, be sure you have a good story to tell the person handing it, or are friends with them after doing them a favour sometime earlier. Alternatively, you can always bribe someone to get a gun. Ruins may also have weapons on offer, though these are often guarded by all manner of fiends or require some thought over. Armor is typically much easier to acquire, and if you ask [security](Security Officer) for a vest they may not even ask questions. Asking someone without an abundance for their clothes, however, will often be met with disappointment. If you have a job that allows you to [buy](Cargo Technician), [take](Security Officer), [grow](Botanist), or [craft](Chemist) your own Armour and weapons, you can simply do that instead of being social.</p>
+<h2 id="hrrngg-narcotics">Hrrngg, Narcotics...==<a class="headerlink" href="#hrrngg-narcotics" title="Permanent link">&para;</a></h2>
+<p>Oh, would you look at that, seems the chem system doesnt exist in a functional state. This is a placeholder until it is implemented.</p>
+<h2 id="changing-the-environment">Changing the environment==<a class="headerlink" href="#changing-the-environment" title="Permanent link">&para;</a></h2>
+<p>Perhaps the most radical way to fight. If you have a lot of high explosives, materials, time, or the [ability to change the stations atmosphere](Atmospherics Technician), you can simply go and do that. A pre-planted bomb always wins in a gunfight. If you dont have these, you can also go into an area where the environment by default is different. sections of the station that are broken, burning, flooded with flammable gas, or arent on the station at all make great ways to kill someone, so long as you can get them there in the first place. There is nothing more satisfying than leading a group of officers into a corner where you've planted a bomb beforehand, and turning them into a fine red mist.</p>
+<h2 id="staying-alive">Staying Alive=<a class="headerlink" href="#staying-alive" title="Permanent link">&para;</a></h2>
+<p>Keeping yourself alive is, obviously, one of the most important parts of winning a fight. Depending on what you have on you and what your opponent has, you have a wide variety of defensive actions you can take. Obviously, anything covered in moving defensively will not be covered here again.</p>
+<h2 id="being-a-coward">Being a coward==<a class="headerlink" href="#being-a-coward" title="Permanent link">&para;</a></h2>
+<p>One of the best ways to not end up dead in a gunfight is to not be there. If your unprepared, try to talk your opponent out of a fight or run away. simple as that. If you cant talk them out, try bribing them out of it. Much of being cowardly has been covered in the defensive movement section, so look there for further guidence.</p>
+<h2 id="actual-methods">Actual methods==<a class="headerlink" href="#actual-methods" title="Permanent link">&para;</a></h2>
+<p>Lets say your not a coward, what then? Well, you can always use Armour. Armour is the simplest way to reduce damage taken, though you'll rarely have it available to you. A gun is also a good way to defend yourself, and not necessarily by killing the other person. If you shoot behind you or at them, theres a good chance they'll give up the fight and retreat. Getting Armour and weapons is covered in guns, sticks, and vests. The disarm intent is your fallback for when your stuck in a situation where its you, unarmed and naked, vs a sec officer with his baton out. Spam-click, hope for the best, and use his weapons against him. At the moment, the taser and baton are incredibly powerful, and if you pull it out at a distance where its unlikely you'll be disarmed, you can shut down most fights before they even begin with a quick stun and baton bash. Fire extinguishers, other things that wet floors, and banana peels are great at slipping someone chasing you so that you can get away easily or turn the tables on your foes.</p>
+<h2 id="ribs-grow-back">Ribs grow back==<a class="headerlink" href="#ribs-grow-back" title="Permanent link">&para;</a></h2>
+<p>No matter how good you are at fighting, you WILL be hurt at some point. If your not at full health, your at an inherent disadvantage and should get fixed up at your earliest convenience. If you think you'll be getting into fights often, its a good idea to keep a few brute patches (or possibly a medkit) on you so you can heal yourself between combat. If you don't have either of these, just hang around medical waiting to be healed or steal them. If you [already start with medical gear](Medical Doctor), staying alive between fights becomes trivial.</p>
+<h2 id="killing-the-other-guy">Killing the other guy=<a class="headerlink" href="#killing-the-other-guy" title="Permanent link">&para;</a></h2>
+<p>A lot of the time in combat, you wont be able to or wont want to non-lethally disable your opponent. If your intent was to kill from the start, a stun of any sort followed by a mag-dump is by far the easiest option for getting rid of someone, though there are several other possible options.</p>
+<h2 id="guns">Guns==<a class="headerlink" href="#guns" title="Permanent link">&para;</a></h2>
+<p>Guns, even thousands of years into the future, haven't deviated from the basic point at the other guy and shoot mentality. Even with laser weapons, guns are really the same regardless of which weapon you use, so long as it isn't meant to be nonlethal. Click, or click and hold, on the other guys sprite or the direction they are moving until they fall over. There exists a very large variety of weapons in ss13, from revolvers more fancy than functional to the dreaded SAW machineguns wielded by nuke ops, and all fit different roles. Just know that ranged weapons in ss13 do follow a hierarchy in terms of use in open combat, but assassination and chases are a much more varied playing field.</p>
+<h2 id="melee">Melee==<a class="headerlink" href="#melee" title="Permanent link">&para;</a></h2>
+<p>Melee combat in SS13 is much riskier than using a firearm, but this comes with greater reward. Melee weapons better reward ambushes, movement, and corner abuse. Or you could just use a taser and then beat them to death, but thats no fun. Just remember that at any time, you can be disarmed in a melee fight and have to fight with your fists or grab your weapon back. Melee weapons dont have as much variety as guns, and have a rather strict heirarchy where batons and eswords rule supreme.</p>
+<h2 id="groups">Groups=<a class="headerlink" href="#groups" title="Permanent link">&para;</a></h2>
+<p>Fighting as a cohesive group is very difficult in unitystation, but is also very rewarding, and practically necessary for antagonists such as nuke ops. If your opponent is a group, cohesive or not, there are ways to fight them, though they may be risky.</p>
+<h2 id="fighting-as-a-tight-group">Fighting as a tight group==<a class="headerlink" href="#fighting-as-a-tight-group" title="Permanent link">&para;</a></h2>
+<p>Fighting in a cohesive group gives the group a MASSIVE advantage over any Rambo, with very few disadvantages. People in the group are less likely to end up dead, as any injuries can be dealt with while others lay down covering fire. The added firepower is also a great bonus, a man with a taser and e-sword may be an extremely deadly threat, but not to 3 guys with their own weapons. If you wish to fight in a cohesive group, good luck, they are very difficult to form from ordinary crew. If you are a security officer or nuke op however, you can be shoved into one by your superiors or start in a group. One thing typically needed for a cohesive group is an involved leader. In secs case, this is typically the HoS, due to his rank. in nuke op squads or militias however, it may be difficult to find a leader, and the group will start to rapidly lose cohesiveness without one. I have personally seen many nuke ops lose simply because their team split apart and drifted from a lack of leadership.</p>
+<h2 id="fighting-as-a-spread-out-group">Fighting as a spread out group==<a class="headerlink" href="#fighting-as-a-spread-out-group" title="Permanent link">&para;</a></h2>
+<p>Fighting while spread out is the typical course for non-emergency period security as well as rebels. In this non-cohesive form, the group your in is more prone to take losses, but [assuming everyone is competent](So close to impossible that it might as well not even exist), is also capable of inflicting far more damage and covering more ground. The fact that each individual in a spread out group needs combat competence is the reason security so often falls to the all consuming entropic force that is the grey tide, because if one link in security doesn't work, thats an unstopped crime, which leads other to more crime, which piles up and piles up until the station is slagged. Spread out groups can form sporadically and with varying degrees of focus. Assistants, as an example can vary widely from the usual random shenanigans, to the razor focused [tunguska revolt](Tunguska).</p>
+<h2 id="fighting-groups">Fighting groups==<a class="headerlink" href="#fighting-groups" title="Permanent link">&para;</a></h2>
+<p>Fighting groups can take two routes, depending on the form of the group. a rarer third route is available if you have a group yourself, however. Fighting a clumped up together group as a lone person is HARD, simply due tohe fact that there are more people. One of the best things you can do to give yourself an advantage is to simply spread the group out. a grenade or other explosive will force a group to split up somewhat, allowing you to pick off a member or two. If they are in a tight space with limited exits, a grenade can spell death for the entire group, making them incredibly powerful. In tight groups, people may split off momentarily to deal with injured or other small tasks. if you've only got single target weapons, this is a great time to strike. If the person you find is a doctor of the team tending to an injured person, shoot the injured person. this will often lend you a free kill, and make the doctor either have to leave them dead or drag them to cloning, the latter giving you the opportunity to take them down as well. Fighting melee against tight groups is typically suicide, and not recommended. Fighting spread out groups is far, far easier than fighting a tight group. if youre fighting a spread out group, treat every person you fight as someone peeled off from a tight group, and use the same tactics discussed above for dealing with them. in this case, a quick melee attack can be viable, unlike with tight groups. Fighting groups with your own groups can go a few ways. Spread out vs Spread out is a toss up, and typically decided by a few robust players. Tight vs Tight typicaally turns into a bloodbath where nobody wins. Tight vs spread out will nearly always result in the tight group winning.</p>
+<h2 id="aftermath">Aftermath=<a class="headerlink" href="#aftermath" title="Permanent link">&para;</a></h2>
+<p>Well, you killed someone, or a lot of people. Turns out, killing people can have repercussions. This section will be about making sure you dont end up like your victims in the aftermath. There are typically three routes you can go down, with varying degrees of legality and possibility for revenge.</p>
+<h2 id="taking-responsibility">Taking responsibility==<a class="headerlink" href="#taking-responsibility" title="Permanent link">&para;</a></h2>
+<p>You see that fella you killed? time to unkill him. This is the best way to avoid the wrath of [sec](Security Officer), the guy you killed and any admins, though it isnt a good option for when you [need them dead](Antagonist) for your employers and may be impossible to do depending on how wanted you are already. The best case scenario is dragging them to cloning yourself, second best is leaving them outside medbay, and third best is just dragging them out into the hall and leaving them there for someone else to clone. </p>
+<h2 id="the-null-outcome">The null outcome==<a class="headerlink" href="#the-null-outcome" title="Permanent link">&para;</a></h2>
+<p>Simply dont touch the body after your done. This can be taken as a sign of mercy, incompetence, or mocking, depending on the whims of the person you killed. It wont let you avoid the wrath of [sec](Security Officer), and can leave the guy you killed mad, but it can be enough to make admins brush it aside, so long as you had reason to kill them in the first place. Definitely not the best option, but sometimes necessary, especially if your on the run already.</p>
+<h2 id="finish-him">FINISH HIM==<a class="headerlink" href="#finish-him" title="Permanent link">&para;</a></h2>
+<p>The least legal option, by far, the one most likely to leave both the guy you killed and any watching admins mad, but one that can leave the least consequences if pulled off correctly. This option, for obvious reasons, is not a good choice for most interactions for non antags (other than say, gibbing a nuke op), but is excellent for anyone looking to cover their tracks and make sure the person they killed doesn't come back to bite them later down the line. Simply take a knife and cut them up, or toss their body into the void of space. Shoving them in an obscure locker may work, but runs the risk of them being found later.</p>
+<h2 id="getting-better">Getting Better<a class="headerlink" href="#getting-better" title="Permanent link">&para;</a></h2>
+<p>Even if you read this page a thousand times, without practice your still going to get your ass beat. the best way to learn to fight in game is to simply fight. stage ragecage matches, play [sec](Security), be an [antag](Antagonist), just don't get mad when your tossed in a cell to rot or turned into swiss cheese by gunfire.</p>
+<p>{{Role Navbox}}</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Clothing-Stats/" title="Clothing Stats" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Clothing Stats
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Construction/" title="Construction" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Construction
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" /></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.36cbf620.min.js"></script>
+      <script src="../assets/javascripts/bundle.00c583dd.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.7f7c8775.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
